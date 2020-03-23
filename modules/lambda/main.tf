@@ -12,7 +12,7 @@ resource "aws_lambda_function" "lambda" {
   filename      = "./modules/lambda/app/lambda.zip"
   function_name = var.name
   role          = aws_iam_role.role.arn
-  handler       = "app/app.lambda_handler"
+  handler       = "modules/lambda/app/app.lambda_handler"
   runtime       = "python3.7"
   source_code_hash = "${filebase64sha256("./modules/lambda/app/lambda.zip")}"
 
