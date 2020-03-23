@@ -4,6 +4,8 @@ import boto3
 from datetime import datetime
 
 def lambda_handler(event, context):
+    os.environ['TZ'] = 'America/Sao_Paulo'
+    time.tzset()
     date = datetime.now()
     req = json.loads(json.dumps(event))
 
