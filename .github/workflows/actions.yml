@@ -15,7 +15,6 @@ jobs:
     - name: Create ZIP for Lambda
       run: |
         rm -rf modules/lambda/app/lambda.zip 2> /dev/null && zip -r9 modules/lambda/app/lambda.zip modules/lambda/app/*
-    - uses: actions/download-artifact@master
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions@master
       with:
