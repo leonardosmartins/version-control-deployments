@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     else:
         return {
             'statusCode': 400,
-            'body': "Componente params not found" 
+            'body': "Componente parameter not found" 
         }    
     
     if "versao" in req:
@@ -23,7 +23,7 @@ def lambda_handler(event, context):
     else:
         return {
             'statusCode': 400,
-            'body': "Versao params not found" 
+            'body': "Versao parameter not found" 
         }
    
     if "responsavel" in req:
@@ -31,7 +31,7 @@ def lambda_handler(event, context):
     else:
         return {
             'statusCode': 400,
-            'body': "Responsavel params not found" 
+            'body': "Responsavel parameter not found" 
         }
 
     if "status" in req:
@@ -39,7 +39,7 @@ def lambda_handler(event, context):
     else:
         return {
             'statusCode': 400,
-            'body': "Status params not found" 
+            'body': "Status parameter not found" 
         }
 
     resp = {"componente": componente, "versao": versao, "responsavel": responsavel, "status": status, "data": date}
