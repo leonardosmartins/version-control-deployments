@@ -1,6 +1,6 @@
 # Version Control Deployments
 
-[**Painel do CI/CD**](https://github.com/leonardosmartins/serverless-project/actions)
+[**Painel do CI/CD**](https://github.com/leonardosmartins/version-control-deployments/actions)
 
 
 Este projeto é uma API de controle de **deployments** de aplicações que fornece um histórico de *deploy* contendo informações úteis.
